@@ -14,6 +14,7 @@ const Formular = ({ addNewSpend, addCreateSpend }) => {
         //validate
         if (ammount < 1 || isNaN(ammount) || spendName.trim() === "") {
             addError(true);
+            return;
         }
         addError(false);
 
